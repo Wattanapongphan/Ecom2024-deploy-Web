@@ -4,7 +4,7 @@ import {
   useStripe,
   useElements
 } from "@stripe/react-stripe-js";
-import '../stripe.css'
+import '../Stripe.css'
 import { saveOrder } from "../api/user";
 import useEcomStore from "../store/ecom-store";
 import {toast} from 'react-toastify'
