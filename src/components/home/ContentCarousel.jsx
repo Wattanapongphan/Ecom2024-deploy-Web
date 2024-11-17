@@ -39,7 +39,7 @@ const ContentCarousel = () => {
 
                 {
                     data?.map((item, index) =>
-                        <SwiperSlide>
+                        <SwiperSlide key={index}>
                             <img src={item.
                                 download_url
                             } className='rounded-md' />
@@ -63,7 +63,7 @@ const ContentCarousel = () => {
 
                 {
                     data?.map((item, index) =>
-                        <SwiperSlide>
+                        <SwiperSlide key={index}>
                             <img src={item.
                                 download_url
                             } className='rounded-md' />

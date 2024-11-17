@@ -33,7 +33,6 @@ const Login = () => {
     try {
       const res = await actionLogin(form)
       const role = res.data.payload.role
-      console.log('role', role)
       roleRedirect(role)
       toast.success("Login Success")
     } catch (err) {
@@ -44,7 +43,7 @@ const Login = () => {
   }
 
   const roleRedirect = (role) => {
-    if (role === 'admin') {
+    if (role === "admin") {
       navigate('/admin')
     } else {
       navigate(-1)

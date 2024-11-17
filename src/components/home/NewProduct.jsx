@@ -26,8 +26,8 @@ console.log(data)
     <SwiperShowProduct>
         {
             data?.map((item,index)=>
-                <SwiperSlide>
-                    <ProductCard key={index} item={item}/> 
+                <SwiperSlide key={index}>
+                    <ProductCard item={item}/> 
                 </SwiperSlide>
             )
         }
